@@ -161,7 +161,7 @@
                 </div>
                 <div class="field btns">
                     <button class="prev-2 prev">Previous</button>
-                    <button class="next-2 next">Next</button>
+                    <button class="reg-submit">Submit</button>
                 </div>
             </div>
         </form>
@@ -184,7 +184,13 @@
     let secondPrevBtn = document.querySelector(".prev-2");
     let slidePrevPage3 = document.querySelector(".slideprevpg3");
 
-
+    firstNextBtn.addEventListener("click", function(event) {
+        //    event.preventDefault();
+        //    slidePage.classList.add('active-pass');
+        //});
+        event.preventDefault();
+        slidePage.style.marginLeft = "-31.2%";
+    });
     firstNextBtn.addEventListener("click", function(event) {
         event.preventDefault();
         slidePage.style.marginLeft = "-31.2%";

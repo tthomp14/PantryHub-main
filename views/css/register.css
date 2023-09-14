@@ -116,10 +116,23 @@ li:last-of-type:hover {
     flex-wrap: wrap;
 }
 
-.page2 img {
+.page2 img, .page3 img {
     height: 90px;
 }
 
 .page2 div {
     display: inline-block;
+}
+
+.page3 {
+    margin-top: 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.active-pass {
+    transform: translateX(-500px);
 }
